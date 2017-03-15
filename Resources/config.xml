@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../engine/Shopware/Components/Plugin/schema/config.xsd">
+    <elements>
+        <element required="true" type="text">
+            <name>papertrailHost</name>
+            <label lang="de">Papertrail Hostname</label>
+            <label lang="en">Papertrail Hostname</label>
+        </element>
+        <element required="true" type="number">
+            <name>papertrailPort</name>
+            <label lang="de">Papertrail Port</label>
+            <label lang="en">Papertrail Port</label>
+        </element>
+    </elements>
+</config>

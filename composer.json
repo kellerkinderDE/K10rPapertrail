@@ -1,0 +1,18 @@
+{
+  "name": "k10r/papertrail",
+  "type": "shopware-plugin",
+  "description": "Sends plugin and core logger logs to papertrailapp.com",
+  "license": "Commercial",
+  "authors": [
+    {
+      "name": "Kellerkinder / k10r GmbH",
+      "email": "anfragen@kellerkinder.de"
+    }
+  ],
+  "require": {
+    "composer/installers": "~1.0"
+  },
+  "extra": {
+    "installer-name": "K10rPapertrail"
+  }
+}

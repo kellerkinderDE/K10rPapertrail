@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+
+
+        <service id="k10r_papertrail.log.handler.papertrail_handler_factory"
+                 class="K10rPapertrail\Log\Handler\PapertrailHandlerFactory">
+        </service>
+        <service id="k10r_papertrail.log.handler.papertrail" class="Monolog\Handler\SyslogUdpHandler">
+            <factory service="k10r_papertrail.log.handler.papertrail_handler_factory"
+                     method="createHandler"
+            />
+            <argument type="service" id="config"/>
+        </service>
+    </services>
+</container>
