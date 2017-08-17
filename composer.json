@@ -2,7 +2,7 @@
   "name": "k10r/papertrail",
   "type": "shopware-plugin",
   "description": "Sends plugin and core logger logs to papertrailapp.com",
-  "license": "Commercial",
+  "license": "MIT",
   "authors": [
     {
       "name": "Kellerkinder / k10r GmbH",
